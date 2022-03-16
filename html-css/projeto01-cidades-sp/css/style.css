@@ -1,0 +1,21 @@
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+h1{
+    color:red;
+}
+h2{
+    color:blue;
+}
+body{
+    text-align: center;
+    margin: 0, 25%, 25%;
+    background: linear-gradient(72deg, #c21414 1%, #ffffff 99%) ;
+}
+#menu tr th{
+    width: 100%;
+    border: 1px solid black;
+    text-align: left;
+    border-collapse: collapse;
+}
