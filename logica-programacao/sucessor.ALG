@@ -5,11 +5,11 @@ Algoritmo "Sucessor"
 // Autor(a)    : Carlos Gabriel
 // Data atual  : 21/03/2022
 Var
-num1: inteiro
+   num1: inteiro
 
 Inicio
-escreva("Digite um número: ")
-leia(num1)
-escreva("Seu sucessor é ", num1 + 1)
+   escreva("Digite um número: ")
+   leia(num1)
+   escreva("Seu sucessor é ", num1 + 1)
 
 Fimalgoritmo

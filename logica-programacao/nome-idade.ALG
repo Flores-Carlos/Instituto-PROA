@@ -5,16 +5,16 @@ Algoritmo "Nome e idade"
 // Autor(a)    : Carlos Gabriel
 // Data atual  : 16/03/2022
 Var
-// Seção de Declarações das variáveis 
-nome: caracter
-idade: inteiro
+   // Seção de Declarações das variáveis
+   nome: caracter
+   idade: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-escreva("Digite seu nome: ")
-leia(nome)
-Escreva("Digite sua idade: ")
-leia(idade)
-escreva(nome, ",", idade, " anos de idade.")
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Digite seu nome: ")
+   leia(nome)
+   Escreva("Digite sua idade: ")
+   leia(idade)
+   escreva(nome, ",", idade, " anos de idade.")
 
 Fimalgoritmo
