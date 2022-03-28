@@ -14,9 +14,7 @@ Inicio
    leia(altura)
    escreval("Digite o raio da lata de óleo em metros: ")
    leia(r)
-
    volume <- (3.14159 * altura) * r^2
-
    escreval("O volume dessa lata de óleo é ", volume, " m³.")
 
 Fimalgoritmo

@@ -12,9 +12,7 @@ Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    escreval("Digite uma temperatura em graus Celsius: ")
    leia(c)
-
    f <- ((9 * c) + 160) / 5
-
    escreval("Em Fahrenheit ficará ", f," graus.")
 
 Fimalgoritmo
