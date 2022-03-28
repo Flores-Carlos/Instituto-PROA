@@ -5,7 +5,7 @@ Algoritmo "Exercício 69"
 //               estoque. Imprimir o valor total em estoque e a média de valor
 //               das mercadorias.
 // Autor(a)    : Carlos Gabriel
-// Data atual  : 27/03/2022
+// Data atual  : 28/03/2022
 Var
    // Seção de Declarações das variáveis
    contador: inteiro
