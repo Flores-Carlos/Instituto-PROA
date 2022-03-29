@@ -1,16 +1,16 @@
-Algoritmo "Exercício 80"
+Algoritmo "Exercício 81"
 // Disciplina   : [Lógica de Programação]
 // Professor   : Obama
 // Descrição   : Ler um vetor Q de 20 posições (somente números positivos).
-//               Escrever o valor do MAIOR elemento de Q e a respectiva posição
+//               Escrever o valor do MENOR elemento de Q e a respectiva posição
 //               que ele ocupa no vetor.
 // Autor(a)    : Carlos Gabriel
 // Data atual  : 29/03/2022
 Var
    // Seção de Declarações das variáveis
    q: vetor[1..20] de real
-   contador, posicaoMaior: inteiro
-   valorMaior: real
+   contador, posicaoMenor: inteiro
+   valorMenor: real
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -20,17 +20,17 @@ Inicio
          leia(q[contador])
       ate(q[contador] >= 0)
       se (contador = 1) entao
-         valorMaior <- q[contador]
-         posicaoMaior <- contador
+         valorMenor <- q[contador]
+         posicaoMenor <- contador
       senao
-         se (q[contador] > valorMaior) entao
-            valorMaior <- q[contador]
-            posicaoMaior <- contador
+         se (q[contador] < valorMenor) entao
+            valorMenor <- q[contador]
+            posicaoMenor <- contador
          fimse
       fimse
    fimpara
 
-   escreval("O MAIOR valor foi", valorMaior, ".")
-   escreval("A (primeira) posição dele no vetor é", posicaoMaior, ".")
+   escreval("O MENOR valor foi", valorMenor, ".")
+   escreval("A (primeira) posição dele no vetor é", posicaoMenor, ".")
 
 Fimalgoritmo
