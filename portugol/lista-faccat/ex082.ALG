@@ -15,20 +15,20 @@ Var
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    para contador de 1 ate 10 faca
-        escreval(contador, "º número: ")
-        leia(a[contador])
+      escreval(contador, "º número: ")
+      leia(a[contador])
    fimpara
-   
+
    escreval("")
-   
+
    escreval("Multiplicador: ")
    leia(x)
-   
+
    escreval("")
-   
+
    para contador de 1 ate 10 faca
-        m[contador] <- a[contador] * x
-        escreval(m[contador])
+      m[contador] <- a[contador] * x
+      escreval(m[contador])
    fimpara
 
 
