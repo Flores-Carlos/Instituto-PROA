@@ -1,9 +1,9 @@
-Algoritmo "Não sei"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
+Algoritmo "(Tenho que descobrir)"
+// Disciplina   : [Lógica de Programação]
+// Professor   : Obama
 // Descrição   : Elaborar um programa que apresente no final o somatório dos
 //               valores pares existentes na faixa de 1 até 500.
-// Autor(a)    : Nome do(a) aluno(a)
+// Autor(a)    : Carlos Gabriel
 // Data atual  : 01/04/2022
 Var
    // Seção de Declarações das variáveis
@@ -16,7 +16,7 @@ Inicio
       contador <- contador + 1
       se ((contador % 2) = 0) entao
          soma <- soma + contador
-         escreval("Somando ", contador)
+         escreval("Somando + 2 =", contador)
       fimse
    fimenquanto
 
