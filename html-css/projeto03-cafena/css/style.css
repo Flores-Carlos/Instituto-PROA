@@ -557,7 +557,14 @@ section{
     color:var(--main-color);
 }
 
+.footer .exp{
+    text-align: center;
+    color: grey;
+}
 
+.footer .exp a{
+    color: var(--main-color);
+}
 
 /* media queries  */
 @media (max-width:991px){
