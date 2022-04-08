@@ -1,208 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Dez Cidades do Estado de São Paulo</title>
     <meta name="keywords" content="Brasil, cidade, São Paulo, bandeira, história">
     <meta name="description" content="Informações sobre 10 cidades do Estado de São Paulo.">
     <meta name="author" content="Carlos Gabriel">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Cidades - SP</title>
 </head>
+
 <body>
-    <table id="menu">
-        <tr>
-            <th>Home</th>
-            <th>Cidades</th>
-            <th>Sobre</th>
-        </tr>
-    </table>
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="img/SP.png" alt="Bandeira de SP">
+        </a>
 
-    <h1>Dez Cidades do Estado de São Paulo</h1>
-    <img src="img/estado_SP.jpg" alt="Bandeira trêmula do Estado de São Paulo" title="Bandeira do Estado de São Paulo" width="600" height="400">
-    <p>
-        O Estado de São Paulo está localizado na região Sudeste do Brasil, é o maior estado da região com 248.2 mil quilômetros quadrados, além de ser o que possui o maior número de habitantes do Brasil, 45.9 milhões. Fazendo fronteira com os estados do Rio de Janeiro, Minas Gerais, Paraná e Mato Grosso do Sul. <br> Vamos ver agora 10 cidades que o compõe.
-    </p>
-    <hr>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#estado">Estado</a>
+            <a href="#cidades">Cidades</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
 
-    <h2>1º São Paulo</h2>
-    <a href="sp.html">
-    <img src="img/cidade_SP.jpg" alt="Imagem representativa da cidade de São Paulo" title="São Paulo" width="600" height="400">
-    </a>
-    <p>
-        <a href="sp.html">São Paulo</a> é uma cidade de Estado do São Paulo. Os habitantes se chamam paulistanos.
-        <br>
-        O município se estende por 1 523,3 km² e contava com 12 252 023 habitantes no último censo.
-        <br>
-        A densidade demográfica é de 8 043,2 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de São Caetano do Sul, Osasco e Taboão da Serra.
-        <br>
-        Situado a 745 metros de altitude, de São Paulo tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 23° 32' 56'' Sul, Longitude: 46° 38' 20'' Oeste.
-        <br>
-        São Paulo é o lar do Parque Estadual do Jaraguá.
-        <br>
-        O prefeito de São Paulo se chama BRUNO COVAS LOPES.
-    </p>
-    <hr>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
 
-    <h2>2º Osasco</h2>
-    <a href="osasco.html">
-    <img src="img/cidade_osasco.jpg" alt="Imagem representativa da cidade de Osasco" title="Osasco" width="600" height="400">
-    </a>
-    <p>
-        <a href="osasco.html">Osasco</a> é uma cidade do Estado de São Paulo. 
-        <br>
-        Os habitantes se chamam osasquenses.
-        <br>
-        O município se estende por 64 km² e contava com 698 418 habitantes no último censo.
-        <br>
-        A densidade demográfica é de 10 906 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de Carapicuíba, Taboão da Serra e Caieiras,Osasco se situa a 16 km a Norte-Oeste de São Paulo.
-        <br>
-        Situado a 726 metros de altitude, de Osasco tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 23° 31' 54'' Sul, Longitude: 46° 47' 24'' Oeste.
-        <br>
-        Osasco é o lar do Parque Estadual do Jaraguá.
-        <br>
-        O prefeito de Osasco se chama ROGERIO LINS WANDERLEY.
-        <br>
-        Osasco é irmã de 3 outras cidades do mundo.
-    </p>
-    <hr>
+    <section class="home" id="home">
+        <div class="content">
+            <h2>São possui muitas cidades e, conquentemente, muitas histórias.</h2>
+            <p>Nós escolhemos algumas cidades do <a href="#estado">Estado de São Paulo</a> para te contar suas
+                histórias. </p>
+            <a href="#cidades" class="btn">Conferir</a>
+        </div>
+    </section>
 
-    <h2>3º Guarulhos</h2>
-    <a href="guarulhos.html">
-    <img src="img/cidade_guarulhos.jpg" alt="Imagem representativa da cidade de Guarulhos" title="Guarulhos" width="600" height="400">
-    </a>
-    <p>
-        <a href="guarulhos.html">Guarulhos</a> é uma cidade do Estado de São Paulo. 
-        <br>
-        Os habitantes se chamam guarulhenses.
-        <br>
-        O município se estende por 319,2 km² e contava com 1 379 182 habitantes no último censo. 
-        <br>
-        A densidade demográfica é de 4 320,9 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de Arujá, Franco da Rocha e Itaquaquecetuba,Guarulhos se situa a 25 km a Norte-Leste de São Paulo.
-        <br>
-        Situado a 769 metros de altitude, de Guarulhos tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 23° 24' 47'' Sul, Longitude: 46° 26' 40'' Oeste.
-        <br>
-        Guarulhos é o lar do Parque Estadual de Itaberaba.
-        <br>
-        O prefeito de Guarulhos se chama GUSTAVO HENRIC COSTA.
-    </p>
-    <hr>
+    <section class="estado" id="estado">
+        <h1 class="heading">Estado de São Paulo</h1>
+        <div class="content">
+            <p>(Resumão sobre São Paulo)</p>
+        </div>
+    </section>
 
-    <h2>4º Campinas</h2>
-    <a href="campinas.html">
-    <img src="img/cidade_campinas.jpg" alt="Imagem representativa da cidade de Campinas" title="Campinas" width="600" height="400">
-    </a>
-    <p>
-        <a href="campinas.html">Campinas</a> é uma cidade do Estado de São Paulo.
-        <br>
-        Os habitantes se chamam campineiros.
-        <br>
-        O município se estende por 795 km² e contava com 1 204 073 habitantes no último censo. 
-        <br>
-        A densidade demográfica é de 1 514,6 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de Hortolândia, Valinhos e Jaguariúna,Campinas se situa a 84 km a Norte-Oeste de São Paulo.
-        <br>
-        Situado a 677 metros de altitude, de Campinas tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 22° 54' 23'' Sul, Longitude: 47° 3' 42'' Oeste.
-        <br>
-        Campinas é o lar do Parque Natural Municipal dos Jatobás.
-        <br>
-        O prefeito de Campinas se chama DARIO JORGE GIOLO SAADI.
-    </p>
-    <hr>
+    <section class="cidades" id="cidades">
+        <h1 class="heading">Algumas cidades</h1>
+        <section class="cidade">
+            <h2>São Paulo</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
 
-    <h2>5º Itaquaquecetuba</h2>
-    <a href="itaqua.html">
-    <img src="img/cidade_itaqua.jpg" alt="Imagem representativa da cidade de Itaquaquecetuba" title="Itaquaquecetuba" width="600" height="400">
-    </a>
-    <p>
-        <a href="itaqua.html">Itaquaquecetuba</a> é uma cidade do Estado de São Paulo.
-        <br>
-        Os habitantes se chamam itaquaquecetubanos.
-        <br>
-        O município se estende por 83 km² e contava com 370 821 habitantes no último censo.
-        <br>
-        A densidade demográfica é de 4 468,8 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de Poá, Arujá e Ferraz de Vasconcelos,Itaquaquecetuba se situa a 13 km a Sul-Leste de Guarulhos.
-        <br>
-        Situado a 746 metros de altitude, de Itaquaquecetuba tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 23° 29' 12'' Sul, Longitude: 46° 20' 56'' Oeste.
-        <br>
-        O prefeito de Itaquaquecetuba se chama EDUARDO BOIGUES QUEROZ.
-    </p>
-    <hr>
+        <section class="cidade">
+            <h2>São Paulo</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
 
-    <h2>6º Arujá</h2>
-    <a href="aruja.html">
-    <img src="img/cidade_aruja.jpg" alt="Imagem representativa da cidade de Arujá" title="Arujá" width="600" height="400">
-    </a>
-    <p>
-        <a href="aruja.html">Arujá</a> é uma cidade do Estado de São Paulo. 
-        <br>
-        Os habitantes se chamam arujaenses.
-        <br>
-        O município se estende por 96,4 km² e contava com 89 824 habitantes no último censo. 
-        <br>
-        A densidade demográfica é de 932,2 habitantes por km² no território do município.
-        <br>
-        Vizinho dos municípios de Santa Isabel, Itaquaquecetuba e Franco da Rocha,Arujá se situa a 10 km a Norte-Leste de Itaquaquecetuba.
-        <br>
-        Situado a 784 metros de altitude, de Arujá tem as seguintes coordenadas geográficas: 
-        <br>
-        Latitude: 23° 23' 47'' Sul, Longitude: 46° 19' 17'' Oeste.
-        <br>
-        Arujá é o lar do Parque Estadual de Itaberaba.
-        <br>
-        O prefeito de Arujá se chama LUIS ANTONIO DE CAMARGO.
-    </p>
-    <hr>
+        <section class="cidade">
+            <h2>Guarulhos</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
 
-    <h2>7º Mairiporã</h2>
-    <a href="mairipora.html">
-    <img src="img/cidade_mairipora.jpg" alt="Imagem representativa da cidade de Mairiporã" title="Mairiporã" width="600" height="400">
-    </a>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, magni aspernatur placeat aliquid quam veniam cupiditate sint maxime sunt, exercitationem fugiat, perspiciatis velit temporibus laudantium quas maiores molestias. Amet, necessitatibus.</p>
-    <p>Fuga dolore aperiam, ea veritatis eos unde. Nulla, ut. Molestiae eveniet cupiditate laudantium saepe doloribus ipsa blanditiis dolores numquam nostrum nemo hic voluptates commodi assumenda sint autem, itaque quas nisi?</p>
-    <hr>
+        <section class="cidade">
+            <h2>Campinas</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
 
-    <h2>8º Mogi das Cruzes</h2>
-    <a href="mogi.html">
-    <img src="img/cidade_mogi.jpg" alt="Imagem representativa da cidade de Mogi das Cruzes" title="Mogi das Cruzes" width="600" height="400">
-    </a>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, magni aspernatur placeat aliquid quam veniam cupiditate sint maxime sunt, exercitationem fugiat, perspiciatis velit temporibus laudantium quas maiores molestias. Amet, necessitatibus.</p>
-    <p>Fuga dolore aperiam, ea veritatis eos unde. Nulla, ut. Molestiae eveniet cupiditate laudantium saepe doloribus ipsa blanditiis dolores numquam nostrum nemo hic voluptates commodi assumenda sint autem, itaque quas nisi?</p>
-    <hr>
+        <section class="cidade">
+            <h2>Mogi das Cruzes</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
 
-    <h2>9º Poá</h2>
-    <a href="poa.html">
-    <img src="img/cidade_poa.jpg" alt="Imagem representativa da cidade de Poá" title="Poá" width="600" height="400">
-    </a>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, magni aspernatur placeat aliquid quam veniam cupiditate sint maxime sunt, exercitationem fugiat, perspiciatis velit temporibus laudantium quas maiores molestias. Amet, necessitatibus.</p>
-    <p>Fuga dolore aperiam, ea veritatis eos unde. Nulla, ut. Molestiae eveniet cupiditate laudantium saepe doloribus ipsa blanditiis dolores numquam nostrum nemo hic voluptates commodi assumenda sint autem, itaque quas nisi?</p>
-    <hr>
-    
-    <h2>10º Santos</h2>
-    <a href="santos.html">
-    <img src="img/cidade_santos.jpg" alt="Imagem representativa da cidade de Santos" title="Santos" width="600" height="400">
-    </a>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, magni aspernatur placeat aliquid quam veniam cupiditate sint maxime sunt, exercitationem fugiat, perspiciatis velit temporibus laudantium quas maiores molestias. Amet, necessitatibus.</p>
-    <p>Fuga dolore aperiam, ea veritatis eos unde. Nulla, ut. Molestiae eveniet cupiditate laudantium saepe doloribus ipsa blanditiis dolores numquam nostrum nemo hic voluptates commodi assumenda sint autem, itaque quas nisi?</p>
+        <section class="cidade">
+            <h2>Arujá</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
+
+        <section class="cidade">
+            <h2>Itaquaquecetuba</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
+
+        <section class="cidade">
+            <h2>Osaco</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
+
+        <section class="cidade">
+            <h2>Santos</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
+
+        <section class="cidade">
+            <h2>Praia Grande</h2>
+            <p>(Resumo da história da cidade)</p>
+        </section>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h1 class="heading">Sobre nós</h1>
+        <section class="content">
+            <p>(Conteúdo sobre nós)</p>
+        </section>
+    </section>
+
+    <footer class="footer" id="footer">
+        <nav class="shortcut">
+            <a href="#home">Home</a>
+            <a href="#estado">Estado</a>
+            <a href="#cidades">Cidades</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <nav class="social">
+            <a href=""><i></i></a>
+            <a href=""><i></i></a>
+            <a href=""><i></i></a>
+        </nav>
+        nav
+    </footer>
 </body>
 </html>
