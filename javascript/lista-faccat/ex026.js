@@ -6,8 +6,8 @@ quantidadeMaxima = parseInt(prompt("Quantidade máxima do produto em estoque: ")
 
 quantidadeMedia = (quantidadeMinima + quantidadeMaxima) / 2;
 
-if (quantidade >= quantidadeMedia){
+if (quantidade >= quantidadeMedia) {
     alert("NÃO efetuar compra.")
-}else{
+} else {
     alert("Efetuar compra.")
 }
