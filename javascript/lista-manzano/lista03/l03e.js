@@ -1,20 +1,18 @@
-let i = 0,
-    j = 1,
-    resultado;
+let potencia = 0, resultado, i;
 
-while (i <= 15) {
+while (potencia <= 15) {
     resultado = 3
-    j = 1
-    if (i == 0) {
-        resultado = 1
-    } else if (i == 1) {
-        resultado = resultado
+    i = 2
+    if (potencia == 0) {
+        resultado = 1;
+    } else if (potencia == 1) {
+        resultado = 3;
     } else {
-        while (j <= i) {
+        while (i <= potencia) {
             resultado = resultado * 3
-            j++
+            i++
         }
     }
-    alert("3^" + i + " = " + resultado)
-    i++
+    alert("3^" + potencia + " = " + resultado)
+    potencia++
 }
