@@ -1,4 +1,4 @@
-Algoritmo "(Tenho que descobrir)"
+Algoritmo "Somatória"
 // Disciplina   : [Lógica de Programação]
 // Professor   : Obama
 // Descrição   : Elaborar um programa que apresente no final o somatório dos
