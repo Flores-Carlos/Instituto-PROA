@@ -11,10 +11,11 @@ b = parseFloat(prompt("Valor de B: "))
 c = parseFloat(prompt("Valor de C: "))
 
 delta = b**2 - (4 * a * c)
+alert("Delta: " + delta)
 
 if (delta < 0){
     alert("A equação não possui valores reais.")
-} else if (delta = 0) {
+} else if (delta == 0) {
     x1 = (b * -1) / (2 * a)
     alert("x = " + x1)
 } else {
