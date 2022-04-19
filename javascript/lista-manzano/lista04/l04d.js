@@ -6,6 +6,7 @@ let
 do {
     acumulador = acumulador + graos
     graos = graos * 2
+    alert("Total de grãos: " + acumulador)
     i++
 } while (i <= 64)
 
