@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Header extends Component {
     render() {
@@ -10,8 +11,8 @@ class Header extends Component {
                 </h1>
                 <form action="" method="post">
                     <input type="text" name="busca" id="busca" placeholder="Faça um busca aqui!" />
-                    <button>
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                    <button href="#">
+                        <img src='../img/glass' className="fa-solid fa-magnifying-glass"></img>
                     </button>
                 </form>
             </header>
