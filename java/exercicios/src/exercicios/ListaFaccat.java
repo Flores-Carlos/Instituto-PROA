@@ -1,5 +1,6 @@
 package exercicios;
 
+import javax.sound.midi.Soundbank;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class ListaFaccat {
     public static void ex05(Scanner sc){
 
         System.out.println("--- Exercício 05 ---");
-        System.out.println("Antecessor do valor digitado.");
+        System.out.println("Antecessor do valor digitado.\n");
 
         System.out.print("Valor: ");
         int a = sc.nextInt();
@@ -19,7 +20,7 @@ public class ListaFaccat {
     public static void ex06(Scanner sc){
 
         System.out.println("--- Exercício 06 ---");
-        System.out.println("Área de um retângulo.");
+        System.out.println("Área de um retângulo.\n");
 
         System.out.print("Base (cm): ");
         int base = sc.nextInt();
@@ -34,7 +35,7 @@ public class ListaFaccat {
 
         System.out.println("--- Exercício 07 ---");
         System.out.println("Idade em anos, meses e dias conertida apenas em dias.");
-        System.out.println("É considerado que o ano tem 365 dias e o mês 30 dias.");
+        System.out.println("É considerado que o ano tem 365 dias e o mês 30 dias.\n");
 
         System.out.print("Anos: ");
         int idadeDias = (sc.nextInt() * 365);
@@ -60,7 +61,7 @@ public class ListaFaccat {
     public static void ex08(Scanner sc) {
 
         System.out.println("--- Exercício 08 ---");
-        System.out.println("Percentual de votos brancos, nulos e válidos.");
+        System.out.println("Percentual de votos brancos, nulos e válidos.\n");
 
         System.out.print("Total de eleitores do município: ");
         int totalEleitores = sc.nextInt();
@@ -101,7 +102,7 @@ public class ListaFaccat {
     public static void ex09(Scanner sc){
 
         System.out.println("--- Exercício 09 ---");
-        System.out.println("Novo salário de acordo com o percentual de reajuste.");
+        System.out.println("Novo salário de acordo com o percentual de reajuste.\n");
 
         System.out.print("Salário atual (R$): ");
         float salarioAtual = sc.nextFloat();
@@ -119,7 +120,7 @@ public class ListaFaccat {
         System.out.print("Custo de um carro novo: ");
         System.out.println("custo de fábrica + porcentagem do distribuidor + impostos (aplicados ao custo de fábrica)");
         System.out.println("Porcentual do distribuidor: 28%");
-        System.out.println("Impostos: 45%");
+        System.out.println("Impostos: 45%\n");
 
         System.out.print("Custo de fábrica (R$): ");
         float custoFabrica = sc.nextFloat();
@@ -133,7 +134,7 @@ public class ListaFaccat {
     public static void ex11(Scanner sc){
 
         System.out.println("--- Exercício 11 ---");
-        System.out.println("Vendedor: Salário fixo + comissão fixa p/ cada carro vendido + 5% do valor total das vendas");
+        System.out.println("Vendedor: Salário fixo + comissão fixa p/ cada carro vendido + 5% do valor total das vendas\n");
 
         System.out.print("Salário fixo (R$): ");
         float salarioFixo = sc.nextFloat();
@@ -155,7 +156,7 @@ public class ListaFaccat {
     public static void ex12(Scanner sc){
 
         System.out.println("--- Exercício 12 ---");
-        System.out.println("Converter graus Fahrenheit em Celsius.");
+        System.out.println("Converter graus Fahrenheit em Celsius.\n");
 
         System.out.print("Temperatura em graus Fahrenheit: ");
         float f = sc.nextFloat();
@@ -168,7 +169,7 @@ public class ListaFaccat {
     public static void ex13(Scanner sc){
 
         System.out.println("--- Exercício 13 ---");
-        System.out.println("Três notas de um aluno e a sua média final.");
+        System.out.println("Três notas de um aluno e a sua média final.\n");
 
         int [] nota = new int[3];
 
@@ -185,7 +186,7 @@ public class ListaFaccat {
     public static void ex14(Scanner sc){
 
         System.out.println("--- Exercício 14 ---");
-        System.out.println("Imprimir se um valor é ou não é maior que 10.");
+        System.out.println("Imprimir se um valor é ou não é maior que 10.\n");
 
         System.out.print("Valor: ");
         int valor = sc.nextInt();
@@ -197,7 +198,7 @@ public class ListaFaccat {
     public static void ex15(Scanner sc){
 
         System.out.println("--- Exercício 15 ---");
-        System.out.println("Imprimir se um valor é positivo ou negativo. Zero será considerado positivo.");
+        System.out.println("Imprimir se um valor é positivo ou negativo. Zero será considerado positivo.\n");
 
         System.out.print("Valor: ");
         int valor = sc.nextInt();
@@ -208,7 +209,7 @@ public class ListaFaccat {
     public static void ex16(Scanner sc){
 
         System.out.println("--- Exercício 16 ---");
-        System.out.println("Preço da MAÇÃ:\nR$ 1,30 se forem compradas menos de 12. \nR$ 1,00 se forem compradas pelo menos 12.");
+        System.out.println("Preço da MAÇÃ:\nR$ 1,30 se forem compradas menos de 12. \nR$ 1,00 se forem compradas pelo menos 12.\n");
 
         System.out.print("Quantidade de maçãs: ");
         int quantidadeMaca = sc.nextInt();
@@ -221,7 +222,7 @@ public class ListaFaccat {
     public static void ex17(Scanner sc){
 
         System.out.println("--- Exercício 17 ---");
-        System.out.println("Imprimir a média simples de duas avaliações e se o aluno foi aprovado (média > 6) ou não");
+        System.out.println("Imprimir a média simples de duas avaliações e se o aluno foi aprovado (média > 6) ou não\n");
 
         float[] nota = new float[2];
 
@@ -239,7 +240,8 @@ public class ListaFaccat {
     public static void ex18(Scanner sc){
 
         System.out.println("--- Exercício 18 ---");
-        System.out.println("Imprimir se o usuário poderá votar esse ano de acordo com o ano do seu nascimento. \nO mês em que a pessoa nasceu não é levado em consideração.");
+        System.out.println("Imprimir se o usuário poderá votar esse ano de acordo com o ano do seu nascimento. \n" +
+                "O mês em que a pessoa nasceu não é levado em consideração.\n");
 
         System.out.print("Ano atual: ");
         int anoAtual = sc.nextInt();
@@ -250,6 +252,199 @@ public class ListaFaccat {
         int idade = anoAtual - anoNascimento;
 
         System.out.println(idade >= 16 ? "Você poderá votar esse ano." : "Você NÃO poderá votar esse ano.");
+        System.out.println("--------------------");
+    }
+    public static void ex19(Scanner sc){
+
+        System.out.println("--- Exercício 19 ---");
+        System.out.println("Imprimir o maior de dois valores diferentes.\n");
+
+        System.out.print("Primeiro valor: ");
+        int a = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        int b = sc.nextInt();
+
+        if (a == b){
+            System.out.println("Valores iguais.");
+        }else{
+            System.out.println("Maior valor: " + (a > b ? a : b));
+        }
+        System.out.println("--------------------");
+    }
+
+    public static void ex20(Scanner sc){
+
+        System.out.println("--- Exercício 20 ---");
+        System.out.println("Imprimir dois valores diferentes em ordem crescente.\n");
+
+        System.out.print("Primeiro valor: ");
+        int a = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        int b = sc.nextInt();
+
+        if (a == b){
+            System.out.println("Valores iguais.");
+        }else{
+            System.out.println("Ordem crescente: " + ((a > b) ? b + " | " + a : a + " | " + b));
+        }
+        System.out.println("--------------------");
+    }
+    public static void ex21(Scanner sc){
+
+        System.out.println("--- Exercício 21 ---");
+        System.out.println("Cálculo da duração (em horas) de uma partida de xadrez que pode durar até, no máximo, 24 horas.\n");
+
+        System.out.print("Hora início: ");
+        int horaInicio = sc.nextInt();
+
+        System.out.print("Hora fim: ");
+        int horaFim = sc.nextInt();
+
+        System.out.println("Duração: " + (horaInicio < horaFim ? (horaFim - horaInicio) : ((horaFim + 24) - horaInicio)) + " hora(s).");
+        System.out.println("--------------------");
+    }
+
+    public static void ex22(Scanner sc){
+
+        System.out.println("--- Exercício 22 ---");
+        System.out.println("A jornada de trabalho semanal de um funcionário é de 40 horas.");
+        System.out.println("A hora extra é o valor da hora regular com um acréscimo de 50%.");
+        System.out.println("Imprimir o salário total do mês (será considerado que o mês possui apenas 4 semanas).\n");
+
+        System.out.print("Salário (R$) por hora: ");
+        float salarioHora = sc.nextFloat();
+
+        System.out.print("Horas trabalhadas no mês: ");
+        int horasTrabalhadas = sc.nextInt();
+
+        float salarioFinal = salarioHora * 160;
+
+        if(horasTrabalhadas > 160){
+            salarioFinal += ((horasTrabalhadas - 160) * salarioHora) * 1.5;
+        }
+
+        System.out.println(horasTrabalhadas < 160 ? "Jornada de trabalho mensal não concluída." : ("Salário final: R$" + salarioFinal));
+        System.out.println("--------------------");
+    }
+    public static void ex24(Scanner sc){
+
+        System.out.println("--- Exercício 24 ---");
+        System.out.println("Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa.\n" +
+                "Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% \n" +
+                "sobre o que ultrapassar este valor, calcular e escrever o seu salário total.\n");
+
+        System.out.print("Salário fixo do vendedor: ");
+        float salarioTotal = sc.nextFloat();
+
+        System.out.print("Valor total das vendas efetuadas pelo vendedor: R$");
+        float valorTotalVendas = sc.nextFloat();
+
+        if (valorTotalVendas <= 1500){
+            salarioTotal += valorTotalVendas * 0.03;
+        } else{
+            salarioTotal += 1500 * 0.03;
+            salarioTotal += (valorTotalVendas - 1500) * 0.05;
+        }
+
+        System.out.println("Salário final: R$" + salarioTotal);
+        System.out.println("--------------------");
+    }
+    public static void ex25(Scanner sc){
+
+        System.out.println("--- Exercício 25 ---");
+        System.out.println("Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. \n" +
+                "Após, calcular e escrever o saldo atual (saldo atual = saldo - débito + crédito). \n" +
+                "Também testar se saldo atual for maior ou igual a zero escrever a mensagem 'Saldo Positivo', \n" +
+                "senão escrever a mensagem 'Saldo Negativo'.\n");
+
+        System.out.print("Número da conta: ");
+        int numeroConta = sc.nextInt();
+
+        System.out.print("Saldo: ");
+        float saldoInicial = sc.nextFloat();
+
+        System.out.print("Débito: ");
+        float debito = sc.nextFloat();
+
+        System.out.print("Crédito: ");
+        float credito = sc.nextFloat();
+
+        float saldoAtual = saldoInicial - (debito + credito);
+        System.out.println("Saldo atual: R$" + saldoAtual);
+        System.out.println(saldoAtual >= 0 ? "Saldo POSITIVO." : "Saldo NEGATIVO.");
+        System.out.println("--------------------");
+    }
+    public static void ex26(Scanner sc){
+
+        System.out.println("--- Exercício 26 ---");
+        System.out.println("Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. \n" +
+                "Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). \n" +
+                "Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem \n" +
+                "'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.\n");
+
+        System.out.print("Quantidade atual em estoque: ");
+        int qtdAtualEstoque = sc.nextInt();
+
+        System.out.print("Quantidade máxima em estoque: ");
+        int qtdMaxEstoque = sc.nextInt();
+
+        System.out.print("Quantidade mínima em estoque: ");
+        int qtdMinEstoque = sc.nextInt();
+
+        float qtdMediaEstoque = (float) (qtdMinEstoque + qtdMaxEstoque) / 2;
+
+        System.out.println(qtdAtualEstoque >= qtdMediaEstoque ? "NÃO efetuar compra." : "Efetuar compra.");
+        System.out.println("--------------------");
+    }
+    public static void ex27(Scanner sc){
+
+        System.out.println("--- Exercício 27 ---");
+        System.out.println("Ler um valor e escrever se é positivo, negativo ou zero.\n");
+
+        System.out.print("Valor: ");
+        int valor = sc.nextInt();
+
+        System.out.println(valor > 0 ? "Valor POSITIVO." : valor < 0 ? "Valor NEGATIVO." : "Valor igual a ZERO.");
+        System.out.println("--------------------");
+    }
+    public static void ex28(Scanner sc){
+
+        System.out.println("--- Exercício 28 ---");
+        System.out.println("Ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.\n");
+
+        int[] valor = new int[3];
+
+        System.out.print("Primeiro valor: ");
+        valor[0] = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        valor[1] = sc.nextInt();
+
+        System.out.print("Terceiro valor: ");
+        valor[2] = sc.nextInt();
+
+        System.out.println("Maior valor: " + (valor[0] > valor[1] ? valor[0] : valor[1] > valor[2] ? valor[1] : valor[2]));
+        System.out.println("--------------------");
+    }
+    public static void ex29(Scanner sc){
+
+        System.out.println("--- Exercício 29 ---");
+        System.out.println("Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.\n");
+
+        int[] valor = new int[3];
+
+        System.out.print("Primeiro valor: ");
+        valor[0] = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        valor[1] = sc.nextInt();
+
+        System.out.print("Terceiro valor: ");
+        valor[2] = sc.nextInt();
+
+        System.out.println("Soma dos 2 maiores valores: " + (valor[0] > valor[1] ? (valor[1] > valor[2] ? valor[0] + valor[1] : valor[0] + valor[2]) : (valor[0] > valor[2] ? valor[1] + valor[0] : valor[1] + valor[2])));
         System.out.println("--------------------");
     }
 }
