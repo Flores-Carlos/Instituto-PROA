@@ -24,7 +24,7 @@ public class Main {
 
         }while (rep.equals("s"));
 
-        System.out.println("Programa finalizado.");
+        System.out.println("Processo finalizado.");
 
         sc.close();
     }
@@ -88,6 +88,36 @@ public class Main {
                 break;
             case 18:
                 ListaFaccat.ex18(sc);
+                break;
+            case 19:
+                ListaFaccat.ex19(sc);
+                break;
+            case 20:
+                ListaFaccat.ex20(sc);
+                break;
+            case 21:
+                ListaFaccat.ex21(sc);
+                break;
+            case 22:
+                ListaFaccat.ex22(sc);
+                break;
+            case 24:
+                ListaFaccat.ex24(sc);
+                break;
+            case 25:
+                ListaFaccat.ex25(sc);
+                break;
+            case 26:
+                ListaFaccat.ex26(sc);
+                break;
+            case 27:
+                ListaFaccat.ex27(sc);
+                break;
+            case 28:
+                ListaFaccat.ex28(sc);
+                break;
+            case 29:
+                ListaFaccat.ex29(sc);
                 break;
             default:
                 System.out.println("[ERRO] Exercício não existe.");
