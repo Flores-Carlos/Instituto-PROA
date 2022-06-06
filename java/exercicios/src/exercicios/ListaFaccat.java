@@ -447,4 +447,109 @@ public class ListaFaccat {
         System.out.println("Soma dos 2 maiores valores: " + (valor[0] > valor[1] ? (valor[1] > valor[2] ? valor[0] + valor[1] : valor[0] + valor[2]) : (valor[0] > valor[2] ? valor[1] + valor[0] : valor[1] + valor[2])));
         System.out.println("--------------------");
     }
+    public static void ex30(Scanner sc){
+
+        System.out.println("--- Exercício 30 ---");
+        System.out.println("Ler 3 valores (considere que não serão informados valores iguais) e escrevê-los em ordem crescente.\n");
+
+        int[] valor = new int[3];
+        int[] crescente = new int[3];
+
+        System.out.print("Primeiro valor: ");
+        valor[0] = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        valor[1] = sc.nextInt();
+
+        System.out.print("Terceiro valor: ");
+        valor[2] = sc.nextInt();
+
+        if(valor[0] > valor[1]){
+            if(valor[0] > valor[2]){
+                crescente[2] = valor[0];
+                if(valor[1] > valor[2]){
+                    crescente[1] = valor[1];
+                    crescente[0] = valor[2];
+                }else{
+                    crescente[1] = valor[2];
+                    crescente[0] = valor[1];
+                }
+            }else{
+                crescente[2] = valor[2];
+                crescente[1] = valor[0];
+                crescente[0] = valor[1];
+            }
+        }else{
+            if(valor[1] > valor[2]){
+                crescente[2] = valor[1];
+                if(valor[0] > valor[2]){
+                    crescente[1] = valor[0];
+                    crescente[0] = valor[2];
+                }else{
+                    crescente[1] = valor[2];
+                    crescente[0] = valor[0];
+                }
+            } else{
+                crescente[2] = valor[2];
+                crescente[1] = valor[1];
+                crescente[0] = valor[0];
+            }
+        }
+
+        System.out.println("Ordem crescente: " + crescente[0] + " | " + crescente[1] + " | " + crescente[2]);
+        System.out.println("--------------------");
+    }
+    public static void ex31(Scanner sc){
+
+        System.out.println("--- Exercício 31 ---");
+        System.out.println("Ler 3 valores representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo.\n" +
+                "OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.\n");
+
+        System.out.print("Lado A: ");
+        int a = sc.nextInt();
+
+        System.out.print("Lado B: ");
+        int b = sc.nextInt();
+
+        System.out.print("Lado C: ");
+        int c = sc.nextInt();
+
+        boolean triangulo = false;
+
+        if(a > (b + c)){
+            triangulo = false;
+        }else if(b > (a + c)){
+            triangulo = false;
+        }else if(c > (a + b)){
+            triangulo = false;
+        }else{
+            triangulo = true;
+        }
+
+        System.out.println(triangulo ? "Formam um triângulo." : "NÃO formam um triângulo.");
+        System.out.println("--------------------");
+    }
+    public static void ex32(Scanner sc){
+
+        System.out.println("--- Exercício 32 ---");
+        System.out.println("Ler o nome de 2 times e o número de gols marcados na partida (para cada time). \n" +
+                "Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.\n");
+
+        sc.nextLine();
+
+        System.out.print("Time da casa: ");
+        String timeCasa = sc.nextLine();
+
+        System.out.print("Time de fora: ");
+        String timeFora = sc.nextLine();
+
+        System.out.print("Gols do " + timeCasa + ": ");
+        int golCasa = sc.nextInt();
+
+        System.out.print("Gols do " + timeFora + ": ");
+        int golFora = sc.nextInt();
+
+        System.out.println(golCasa > golFora ? timeCasa + " VENCEU!" : golFora > golCasa ? timeFora + " VENCEU!" : "EMPATE!");
+        System.out.println("--------------------");
+    }
 }
