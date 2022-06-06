@@ -1,4 +1,4 @@
-import exercicios.*;
+import listas.*;
 import java.util.Scanner;
 
 public class Main {
