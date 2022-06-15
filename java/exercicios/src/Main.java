@@ -128,6 +128,12 @@ public class Main {
             case 32:
                 ListaFaccat.ex32(sc);
                 break;
+            case 33:
+                ListaFaccat.ex33(sc);
+                break;
+            case 35:
+                ListaFaccat.ex35(sc);
+                break;
             default:
                 System.out.println("[ERRO] Exercício não existe.");
                 break;
