@@ -550,4 +550,71 @@ public class ListaFaccat {
         System.out.println(golCasa > golFora ? timeCasa + " VENCEU!" : golFora > golCasa ? timeFora + " VENCEU!" : "EMPATE!");
         System.out.println("--------------------");
     }
+
+    public static void ex33(Scanner sc){
+
+        System.out.println("--- Exercício 33 ---");
+        System.out.println("Ler dois valores e imprimir uma das três mensagens a seguir:\n" +
+                "Números iguais\n" +
+                "Primeiro é maior\n" +
+                "Segundo maior\n");
+
+        System.out.print("Primeiro valor: ");
+        int a = sc.nextInt();
+
+        System.out.print("Segundo valor: ");
+        int b = sc.nextInt();
+
+        System.out.println(a > b ? "Primeiro é maior." : a < b ? "Segundo é maior." : "Números iguais.");
+        System.out.println("--------------------");
+    }
+
+    public static void ex35(Scanner sc){
+
+        System.out.println("--- Exercício 35 ---");
+        System.out.println("Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível\n" +
+                "(codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente\n" +
+                "sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.\n" +
+                "Álcool:\n" +
+                "até 20 litros, desconto de 3% por litro\n" +
+                "acima de 20 litros, desconto de 5% por litro\n" +
+                "Gasolina:\n" +
+                "até 20 litros, desconto de 4% por litro\n" +
+                "acima de 20 litros, desconto de 6% por litro\n");
+
+        sc.nextLine();
+
+        String tipoCombustivel;
+        do{
+            System.out.print("Tipo de combustível - (a)álcool ou (g)gasolina: ");
+            tipoCombustivel = sc.nextLine();
+        }while(!(tipoCombustivel.equals("a") || tipoCombustivel.equals("g")));
+
+        int litros;
+        do{
+            System.out.print("Litros vendidos: ");
+            litros = sc.nextInt();
+        }while(litros < 0);
+
+        double preco;
+
+        if(tipoCombustivel.equals("a")){
+            preco = 2.9;
+            if(litros <= 20){
+                preco *= 0.97;
+            }else{
+                preco *= 0.95;
+            }
+        } else{
+            preco = 3.3;
+            if(litros <= 20){
+                preco *= 0.96;
+            }else{
+                preco *= 0.94;
+            }
+        }
+
+        System.out.println("Preço final: R$" + (preco * litros));
+        System.out.println("--------------------");
+    }
 }
