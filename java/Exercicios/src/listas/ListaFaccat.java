@@ -617,4 +617,51 @@ public class ListaFaccat {
         System.out.println("Preço final: R$" + (preco * litros));
         System.out.println("--------------------");
     }
+
+    public static void ex36(Scanner sc){
+
+        System.out.println("--- Exercício 36 ---");
+        System.out.println("Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades\n" +
+                "dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma\n" +
+                "das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais\n" +
+                "novo com a mulher mais velha\n");
+
+        int homemVelho, homemNovo, mulherNova, mulherVelha;
+
+        System.out.print("Idade do primeiro homem: ");
+        int idadeHomem1 = sc.nextInt();
+
+        System.out.print("Idade do segundo homem: ");
+        int idadeHomem2 = sc.nextInt();
+
+        System.out.print("Idade da primeira mulher: ");
+        int idadeMulher1 = sc.nextInt();
+
+        System.out.print("Idade da segunda mulher: ");
+        int idadeMulher2 = sc.nextInt();
+
+        if(idadeHomem1 > idadeHomem2){
+            homemNovo = idadeHomem2;
+            homemVelho = idadeHomem1;
+        }else {
+            homemNovo = idadeHomem1;
+            homemVelho = idadeHomem2;
+        }
+
+        if(idadeMulher1 > idadeMulher2){
+            mulherNova = idadeMulher2;
+            mulherVelha = idadeMulher1;
+        }else{
+            mulherNova = idadeMulher1;
+            mulherVelha = idadeMulher2;
+        }
+
+        System.out.println("Soma da idade do homem mais velho com a mulher mais nova: " + (homemVelho + mulherNova));
+        System.out.println("Produto da idade do homem mais novo com a mulher mais velha: " + (homemNovo * mulherVelha));
+        System.out.println("--------------------");
+    }
+
+    public static void ex37(Scanner sc){
+
+    }
 }
